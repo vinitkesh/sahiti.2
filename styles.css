@@ -11,9 +11,6 @@ body{
     background-color: #FFFDD0;
 }
 
-nav{
-    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
-}
 nav ul{
     width: 100%;
     list-style: none;
@@ -52,6 +49,12 @@ nav a:hover{
     transition: 0.3s;
 
 }
+nav a:hover{
+    background-color: #E97451;
+    color: #FFFDD0;
+    transition: 0.3s;
+
+}
 
 nav li:first-child{
     margin-right: auto;
@@ -67,7 +70,7 @@ nav li:first-child{
     height:100vh;
     width:250px;
     z-index:999;
-    backdrop-filter: blur(10px);
+    background-color: #FFFDD0;
     
 
     display: flex;
@@ -140,6 +143,102 @@ nav li:first-child{
 
 
 /*///////////////////////////////// footer/////////////////////////////////////////*/
+
+.frame2{
+    background-color: #FFFDD0;
+    display: flex;
+    flex-grow: 4;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 2px 20px 0px;
+    
+
+}
+.frame2 h1{
+    font-family: poppins;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    
+}
+.frame2_btn{
+    background-color: #E97451;
+    height: fit-content;
+    padding: 18px 30px;
+    border-radius: 500px;
+    
+}
+.frame2_btn span{
+    font-family: Poppins;
+    color: #FFFDD0;
+    font-size: 1.4rem;
+    
+}
+
+/*////////////////////////////////////////////*/
+
+.menu {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	--marquee-width: 100vw;
+	--offset: 20vw;
+	--move-initial: calc(-25% + var(--offset));
+	--move-final: calc(-50% + var(--offset));
+	--item-font-size: 10vw;
+	counter-reset: menu;
+    background-color: #E97451;
+}
+
+/* Make sure 3 items are visible in the viewport by setting suitable font size. */
+
+.marquee {
+	position: absolute;
+	width: var(--marquee-width);
+	overflow: hidden;
+	pointer-events: none;
+	mix-blend-mode: color-burn;
+    background-color: #E97451;
+    
+    
+}
+
+.marquee__inner {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	transform: translate3d(var(--move-initial), 0, 0);
+	animation: marquee 5s linear infinite;
+	animation-play-state: paused;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.marquee .marquee__inner {
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.marquee img {
+  background-color: #E97451;
+  padding-left: 40px;
+  padding: 20px;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+
+	100% {
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+}
 
 
 
