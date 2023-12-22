@@ -1,148 +1,78 @@
-*{
-    padding: 0;
+* {
+    box-sizing: border-box;
+  }
+  
+  .layerz{
+    position: absolute;
+    background-color: #fa6723;
+    height: 100%;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
-}
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 999;
+  }
 
-body{
-    width: auto;
-    height: auto;
-    background-color: #FFFDD0;
-}
+  .container {
+    width: 100vw;
+    height: 50vw;
+    position: relative;
+    min-width: 400px;
+    min-height: 400px;
 
-nav ul{
+  }
+  .container:hover{
+    box-shadow: black;
+  }
+  
+  .artboard {
     width: 100%;
-    list-style: none;
+    height: 100%;
+    background: white;
+    border-radius: 200px;
+    box-shadow: 0 15px 100px rgba(237, 57, 41, 0.7), 0 3px 35px rgba(0, 0, 0, 0.5);
+    transform: scale(0.15);
+    transition: transform 1s, box-shadow 0.5s;
+
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-}
-
-nav li{
-    height: 80px;
-    padding: 0 10px;
-    text-decoration: none;
-    display: flex;
-    align-items:center;  /* Vertical alignment*/
-    justify-content:end; /* Horizontal alignment*/
-}
-
-.nav-button,.sidebar-button{
-    color: #E97451;
-    padding: 0 15px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-
+    justify-content: center;
+  }
+  .artboard h1{
     font-family: poppins;
-    font-size: 1.5rem;
-
-    border-radius: 20px;
-    height: 30px;
+    font-size: 7rem;
+    color: #E97451;
+  }
+  
+  
+  .active .artboard {
+    box-shadow: 0 15px 40px rgba(255, 98, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(10);
+    background: transparent;
+  }
+  
+  .active .background {
+    transform: scale(1);
+    background: transparent;
+  }
+  .active .layerz{
     
-}
-
-nav a:hover{
-    background-color: #E97451;
-    color: #FFFDD0;
-    transition: 0.3s;
-
-}
-nav a:hover{
-    background-color: #E97451;
-    color: #FFFDD0;
-    transition: 0.3s;
-
-}
-
-nav li:first-child{
-    margin-right: auto;
-}
-
-
-.sidebar{
-    position: fixed; 
-    /*This makes sure sidebar is separate from all other content*/
-
-    top:0;
-    right:0;
-    height:100vh;
-    width:250px;
-    z-index:999;
-    background-color: #FFFDD0;
+    transition: 2s;
+    background-color: transparent;
+    z-index: -22;
+  }
+  .active .artboard h1{
+    transition: 1s;
+    color: transparent;
     
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items:  flex-start;
-    justify-content: flex-start;
+  
 
-    display: none;
-
-}
-
-.sidebar li{
-    width:fit-content;
-}
-
-.sidebar a{
-    width:fit-content;
-}
-
-.sidebar a:hover{
-    background-color: rgba(0, 255, 68, 1);
-}
 
 /*///////////////////////////////// Navbar css ends here(except media query) ////////////////////////////*/
 
-.mid-section{
-    display: flex;
-}
-
-.mid-text{
-    width: auto;
-    padding: 70px 5vw;
-}
-
-.mid-text-box:hover{
-    background-color: rgba(0, 255, 68, 1);
-    box-shadow: -20px 0px 20px rgb(0, 0, 0, 0.1);
-    transition: 0.3s;
-}
-.mid-text-box{
-    background-color: #A2A2A2;
-    width: 410px;
-    padding:  10px 20px;
-    border-radius: 20px;
-}
-
-.mid-text-box p{
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 1.5rem;
-    text-align: center;
-    text-align: justify;
-    padding: 10px;
-}
-.heading-text{
-    font-family: 'Announcement', cursive;
-    font-size: 4rem;
-    text-align: center;
-    text-align: justify;
-    padding: 10px;
-    margin: 0;  
-}
-
-.boy-on-books{
-   position:fixed;
-   top: 0px;
-   z-index: -1;
-   right: 0px
-
-}
-
-
-/*///////////////////////////////// footer/////////////////////////////////////////*/
+/*///////////////////////////////// frame2/////////////////////////////////////////*/
 
 .frame2{
     background-color: #FFFDD0;
@@ -185,25 +115,21 @@ nav li:first-child{
 	-ms-user-select: none;
 	user-select: none;
 	--marquee-width: 100vw;
-	--offset: 20vw;
+	--offset: 0vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
 	--item-font-size: 10vw;
 	counter-reset: menu;
     background-color: #E97451;
+    width: 100vw;
 }
 
 /* Make sure 3 items are visible in the viewport by setting suitable font size. */
 
 .marquee {
-	position: absolute;
 	width: var(--marquee-width);
 	overflow: hidden;
 	pointer-events: none;
-	mix-blend-mode: color-burn;
-    background-color: #E97451;
-    
-    
 }
 
 .marquee__inner {
@@ -214,20 +140,61 @@ nav li:first-child{
 	animation: marquee 5s linear infinite;
 	animation-play-state: paused;
 	opacity: 0;
-	transition: opacity 0.1s;
 }
 
 .marquee .marquee__inner {
 	animation-play-state: running;
 	opacity: 1;
 	transition-duration: 0.4s;
+
 }
 
 .marquee img {
-  background-color: #E97451;
-  padding-left: 40px;
-  padding: 20px;
+    height: 6vw;
+    padding: 2vh;
+    padding-left: 5vw;
+    background-color: #E97451;
+    margin: 0%;
 }
+/*////////////////////////////////////////////////////////////////////////////*/
+.frame3 img{
+    width:100vw;
+    margin: 0;
+    padding: 0%;
+    position: absolute;
+    z-index: -1;
+    align-self: flex-start;
+}
+.frame3_textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10% ;
+    gap: 2px;
+    width:90%;
+}
+.frame3_text{
+    font-size: 1.1rem;
+    color: #FFFDD0;
+    font-family: 'Libre Caslon Text';
+}
+.frame3_button{
+    background-color: #E97451;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+}
+.frame3_button_a span{
+    
+    font-family: poppins;
+    font-size: 1.2rem;
+    color: #FFFDD0;
+    padding: 20px;
+    text-align: center;
+}
+
+
 
 @keyframes marquee {
 	0% {
@@ -238,21 +205,34 @@ nav li:first-child{
 		transform: translate3d(var(--move-final), 0, 0);
 	}
 }
-}
 
 
 
 
 
-@media(max-width: 776px){
-    .hideOnMobile{
-        display: none;
-    }
-    .mid-section{
-        flex-direction: column;
-        align-items: center;
-    }
-    .boy-on-books{
-        position: relative;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
