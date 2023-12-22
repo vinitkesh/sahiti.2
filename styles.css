@@ -5,8 +5,7 @@
   .layerz{
     position: absolute;
     background-color: #fa6723;
-    height: 220vh;
-    width: 100vw;
+    height: 200%;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -60,10 +59,12 @@
     
     transition: 2s;
     background-color: transparent;
+    z-index: -22;
   }
   .active .artboard h1{
     transition: 1s;
     color: transparent;
+    
   }
 
   
