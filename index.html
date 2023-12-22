@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahiti</title>
     <link rel="stylesheet" href="./styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--///////////////////////////////////////////Click to show menu///////////-->
+
+    <div class="layerz">
+        <div class="container">
+            <div class="artboard" id="artboard" onclick="toggleActive()">
+                <h1 class="entry_text">Welcome to Sahiti</h1>
+            </div>  
+        </div>
+    </div>
+  
+
+
     
     <nav>
         <ul class="sidebar">
             <li onclick="hideSidebar()"><a href="#" class="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="./events/events.html" class="sidebar-button">About</a></li>
+            <li><a href="#" class="sidebar-button">About</a></li>
             <li><a href="#" class="sidebar-button">Programme</a></li>
             <li><a href="#" class="sidebar-button">Speakers</a></li>
             <li><a href="#" class="sidebar-button">Gallery</a></li>
@@ -25,7 +37,7 @@
         </ul>
         <ul >
             <li><a href="#" class="close closemenu"><img src="./assets/image 2.png" alt="" class="logo navbar-logo" style="height: 70px"></a></a></li>
-            <li><a href="./events/events.html" class="nav-button hideOnMobile">About</a></li>
+            <li><a href="#" class="nav-button hideOnMobile">About</a></li>
             <li><a href="#" class="nav-button hideOnMobile">Programme</a></li>
             <li><a href="#" class="nav-button hideOnMobile">Speakers</a></li>
             <li><a href="#" class="nav-button hideOnMobile">Gallery</a></li>
@@ -34,7 +46,7 @@
     </nav>
 
 
-    <!--///////////////////////////////////////////////Footer////////////////////////-->
+    <!--///////////////////////////////////////////////Frame1////////////////////////-->
     <img src="./assets/Frame1.png" alt="" class="frame1" style="width:100vw">
 
     <div class="frame2">
@@ -48,7 +60,7 @@
                 <span class="text">Know more</span>
             </div>
     </div>
-    <!--///////////////////////////////////////////////////////-->
+    <!--/////////////////////////Frame2//////////////////////////////-->
     <nav class="menu">
         <div class="menu__item">
           <div class="marquee">
@@ -71,6 +83,49 @@
         </div>
       </nav>
 
+    <div class="frame3" >
+        <img src="./assets/webtt1-01 1.png" alt="">
+        <div class="frame3_textbox">
+            <span class="frame3_text">Sahiti, Kozhikode's literary extravaganza, unfolds on March 9 and 10, </span>
+            <span class="frame3_text">presented by the Literary and Debating Club of NIT Calicut.</span>
+            <span class="frame3_text">Join us for two days of vibrant discussions, readings, and workshops,</span>
+            <span class="frame3_text">as we celebrate the magic of words and ideas. </span>
+            <span class="frame3_text">Save the dates and be part of this literary journey!</span>
+            <div class="frame3_button">
+                <a href="" class="frame3_button_a">
+                    <img src="" alt="">
+                    <span>Know More</span>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <nav class="menu">
+        <div class="menu__item">
+          <div class="marquee">
+            <div class="marquee__inner">
+              <img src="./assets/scroll_svg/Vector-3.png" alt="">
+              <img src="./assets/scroll_svg/Vector-4.png" alt="">
+              <img src="./assets/scroll_svg/Vector-5.png" alt="">
+              <img src="./assets/scroll_svg/Vector-6.png" alt="">
+              <img src="./assets/scroll_svg/Vector-7.png" alt="">
+              <img src="./assets/scroll_svg/Vector-8.png" alt="">
+              <img src="./assets/scroll_svg/Vector-10.png" alt="">
+              <img src="./assets/scroll_svg/Vector-11.png" alt="">
+              <img src="./assets/scroll_svg/Vector-12.png" alt="">
+              <img src="./assets/scroll_svg/Vector-13.png" alt="">
+              <img src="./assets/scroll_svg/Vector-14.png" alt="">
+              <img src="./assets/scroll_svg/Vector-15.png" alt="">
+              <img src="./assets/scroll_svg/Vector-16.png" alt="">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    
+
 
     <script>
         function showSidebar(){
@@ -81,5 +136,11 @@
         }
     </script>
 
+
+    <script>
+        function toggleActive() {
+          document.body.classList.add("active"); //add makes it one click button, if it was toggle it would toggle
+        }
+      </script>
 </body>
 </html>
