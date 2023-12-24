@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
   }
-  
   .layerz{
     position: absolute;
     background-color: #fa6723;
@@ -26,8 +25,7 @@
   }
   
   .artboard {
-    width: 100%;
-    height: 100%;
+    width: fit-content;
     background: white;
     border-radius: 200px;
     box-shadow: 0 15px 100px rgba(237, 57, 41, 0.7), 0 3px 35px rgba(0, 0, 0, 0.5);
@@ -40,7 +38,7 @@
   }
   .artboard h1{
     font-family: poppins;
-    font-size: 7rem;
+    font-size: 21vh;
     color: #E97451;
   }
   
@@ -70,39 +68,46 @@
   
 
 
-/*///////////////////////////////// Navbar css ends here(except media query) ////////////////////////////*/
 
 /*///////////////////////////////// frame2/////////////////////////////////////////*/
 
 .frame2{
+    width: 100dvw;
     background-color: #FFFDD0;
     display: flex;
-    flex-grow: 4;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 2px 20px 0px;
-    
-
+}
+.frame2 img{
+    width: 40vw;
+    margin: 0;
+    padding: 0;
 }
 .frame2 h1{
     font-family: poppins;
-    font-size: 1.2rem;
+    font-size: 3.2vw;
     display: flex;
     flex-direction: column;
     gap:0.2rem;
     
 }
 .frame2_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E97451;
-    height: fit-content;
-    padding: 18px 30px;
-    border-radius: 500px;
+    gap: 0px;
+    width:fit-content;
+    border-radius: 50px;
     
 }
 .frame2_btn span{
+    text-align: center;
     font-family: Poppins;
     color: #FFFDD0;
-    font-size: 1.4rem;
+    width: 100%;
+    font-size: 3.2vw;
     
 }
 
@@ -150,13 +155,19 @@
 }
 
 .marquee img {
-    height: 6vw;
+    height: 6vh;
     padding: 2vh;
     padding-left: 5vw;
     background-color: #E97451;
     margin: 0%;
 }
 /*////////////////////////////////////////////////////////////////////////////*/
+.frame3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
 .frame3 img{
     width:100vw;
     margin: 0;
@@ -192,6 +203,11 @@
     color: #FFFDD0;
     padding: 20px;
     text-align: center;
+}
+
+.marquee2{
+  top: 200px;
+  left: 200px;
 }
 
 
