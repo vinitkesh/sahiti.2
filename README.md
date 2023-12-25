@@ -18,3 +18,7 @@ Home page elements:
 - [ ] Orange Marquee
 - [ ] Frame 4: #undecided
 - [ ] White Marquee
+- [ ] Speakers: Card Catalogue
+- [ ] Orange Marquee
+
+![UI Design to work with](<MacBook Air - 1.png>)
