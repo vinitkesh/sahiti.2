@@ -8,13 +8,13 @@ Home page elements:
 
 
 
-- [x] ### Navbar
-- [x] ### Wide card slider
-- [x] ### Frame 2 : CCAR
-- [x] ### Orange Marquee
-- [x] ### Frame 3: LnD
-- [x] ### White Marquee
-- [ ] ### Discover the festival: Card catalogue
-- [ ] ### Orange Marquee
-- [ ] ### Frame 4: #undecided
-- [ ] ### White Marquee
+- [x] Navbar
+- [x] Wide card slider
+- [x] Frame 2 : CCAR
+- [x] Orange Marquee
+- [x] Frame 3: LnD
+- [x] White Marquee
+- [ ] Discover the festival: Card catalogue
+- [ ] Orange Marquee
+- [ ] Frame 4: #undecided
+- [ ] White Marquee
